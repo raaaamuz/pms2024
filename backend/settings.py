@@ -13,7 +13,7 @@ SECRET_KEY = 'django-insecure-u^pd1t^ctiksbn)41%74binymr914f2d*mle&-b1@_!78!60l7
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['4sightoperations.in', 'www.4sightoperations.in','localhost','http://localhost:8000/']
+ALLOWED_HOSTS = ['4sightoperations.in','4sightoperations.com', 'www.4sightoperations.com','localhost','http://localhost:8000/']
 
 
 # Application definition
