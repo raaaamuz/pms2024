@@ -47,7 +47,10 @@ REST_FRAMEWORK = {
         'rest_framework.permissions.IsAuthenticated',
     ],
 }
-
+CSRF_TRUSTED_ORIGINS = [
+    'https://4sightoperations.com/',
+    'https://4sightoperations.in',
+]
 AUTHENTICATION_BACKENDS = [
     'django.contrib.auth.backends.ModelBackend',  # Default backend
 ]
@@ -72,7 +75,7 @@ MIDDLEWARE = [
 ROOT_URLCONF = 'backend.urls'
 
 CORS_ORIGIN_WHITELIST = [
-    'http://localhost:3000',  # Add the origin of your React application here
+    'https://4sightoperations.com',  # Add the origin of your React application here
 ]
 
 TEMPLATES = [
