@@ -17,14 +17,14 @@ DEBUG = True
 
 # settings.py
 
-ALLOWED_HOSTS = [
-    '3.29.33.198',       # Your EC2 instance public IP address
-    '4sightoperations.in',   # Your domain name
-    '4sightoperations.com',
-    'localhost','http://localhost:8000/'
-]
+# ALLOWED_HOSTS = [
+#     '3.29.33.198',       # Your EC2 instance public IP address
+#     '4sightoperations.in',   # Your domain name
+#     '4sightoperations.com',
+#     'localhost','http://localhost:8000/'
+# ]
 
-
+ALLOWED_HOSTS = ['*']
 # Application definition
 INSTALLED_APPS = [
     'django.contrib.admin',
@@ -145,7 +145,7 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 CORS_ALLOW_ALL_ORIGINS = True  # Change this to `CORS_ALLOWED_ORIGINS` for specific domains in production
 
 CORS_ALLOWED_ORIGINS = [
-    'http://localhost:3000',  # Add the origin of your React application here
+    'http://localhost:3000','https://4sightoperations.com/',  # Add the origin of your React application here
 ]
 
 AUTH_USER_MODEL = 'user.CustomUser'
