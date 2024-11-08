@@ -13,7 +13,16 @@ SECRET_KEY = 'django-insecure-u^pd1t^ctiksbn)41%74binymr914f2d*mle&-b1@_!78!60l7
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['4sightoperations.in','4sightoperations.com', 'www.4sightoperations.com','localhost','http://localhost:8000/']
+# ALLOWED_HOSTS = ['4sightoperations.in','4sightoperations.com', 'www.4sightoperations.com','localhost','http://localhost:8000/']
+
+# settings.py
+
+ALLOWED_HOSTS = [
+    '3.29.33.198',       # Your EC2 instance public IP address
+    '4sightoperations.in',   # Your domain name
+    '4sightoperations.com',
+    'localhost','http://localhost:8000/'
+]
 
 
 # Application definition
